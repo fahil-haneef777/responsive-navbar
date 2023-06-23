@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
+    <title>Pickitto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <div class="navbar">
+        <div><a class="logo" href="#">Pick-itto</a></div>
+        <ul class="links">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="feedback">Feedback</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="feedback">Feedback</a></li>
+        <li><a href="Contact">Contact</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+</header>
+<script>
+    const toggleBtn=document.querySelector('.toggle_btn')
+    const toggleBtnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+    // toggleBtn.onclick=()=>{
+    //     dropDownMenu.classList.toggle('open')
+    //     const isopen=dropDownMenu.classList.contains('open')
+    //     toggleBtnIcon.classList=isopen ?'fa-solid fa-xmark':'fa-solid fa-bars'
+    // }
+    toggleBtn.onclick=()=>{
+        dropDownMenu.classList.toggle('open')
+        toggleBtnIcon.classList=document.querySelector('.dropdown_menu').classList.contains('open')?'fa-solid fa-xmark':'fa-solid fa-bars'
+
+    }
+</script>
+
+</body>
+
+</html>
